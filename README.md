@@ -1,15 +1,19 @@
-# 5-Axis-Camera-Position-Control
-  The "Tasmanian Devil" is a 5-axis camera position control system to get all the video shots you could dream of. The design is an extension of [isaac879](https://github.com/isaac879/Pan-Tilt-Mount)'s camera rig which allows the use of three axes, and shutter control. Using Isaac879's available pinouts and step files, their design was modified to account for focus and zoom, or dynamic lighting control.
-  Go see the final product in action on YouTube [here](https://www.youtube.com/watch?v=kPsWlgf-iiQ)! 
-  To understand the modifications made it is strongly suggested to look at [isaac879](https://github.com/isaac879/Pan-Tilt-Mount)'s original work on this project.
-
+# 5-Axis Camera Position-Control
+  The "Tasmanian Devil" is a 5-axis camera position control system to get all the video shots you could dream of. The system was designed by [isaac879](https://github.com/isaac879) and adjusted by [Macartney-Christopher](https://github.com/Macartney-Christopher) to add focus and zoom control functions (dynamic lighting control). Using Isaac's design and Christopher's adjustments, the system was tested extensively by myself and several changes were made to improve its functionality and reliability.
+  
+  Original Design: https://github.com/isaac879/Pan-Tilt-Mount 
+  Dynamic Lighting Adjustments: https://github.com/Macartney-Christopher/5-Axis-Camera-Position-Control (https://www.youtube.com/watch?v=kPsWlgf-iiQ)
+ 
 
 ## Table of Contents
-### 1. [Mechanical Design](Mechanical.md)
-### 2. [Hardware Design](Hardware.md)
-### 3. [Software Design](Software.md)
+### 1. [Getting Started](Start.md)
+### 2. [Mechanical Design](Mechanical.md)
+### 3. [Hardware Design](Hardware.md)
+### 4. [Software Design](Software.md)
+### 5. [Adjustments](Adjustments.md)
+### 6. [Comments](Comments.md)
 
-## Setup
+## Setup (Gaming Controller)
 1. Plug the power cable to an outlet
 2. Plug the Xbox controller and the USB cable to your computer
 3. Download the repository and extract the folder [Tasmanian_Launch](Tasmanian_Launch).
@@ -17,23 +21,14 @@
 5. Double-click on [Tasmanian_Launch.bat](Tasmanian_Launch/Tasmanian_Launch.bat)
 6. Enjoy!
 
-## Do It Yourself
-### Build
-1. Upload the Arduino code to the Nano 33 IoT
-3. Assemble the 3D prints
-4. Set up the wiring
-5. Open the and compile the Bluetooth code on C++ compiler
-
-#### With Gaming Controller
-&nbsp;&nbsp;&nbsp;Follow the "Setup" protocol
-
-#### Without Gaming Controller
+#### Setup (Arduino Serial Monitor)
 1. Compile the Arduino code [here](FlashStorage_PanTiltMount/FlashStorage_PanTiltMount.ino) 
 3. Ensure all cables are connected
 4. Compile and execute
-5. Operate in Arduino IDE using [these commands](FlashStorage_PanTiltMount/5-Axis_Position_Control_Commands.pdf)
+5. Operate in Arduino IDE using [these commands](FlashStorage_PanTiltMount/5-Axis_Position_Control_Commands.pdf) in the serial monitor
 
 ## Credits
-  The mechanical, hardware and software design is an adapted version of [isaac879](https://github.com/isaac879/Pan-Tilt-Mount)'s project. Isaac879 did a tremendous job with every aspect of the project and shows great skill in his other project as well. [Isaac879's video](https://www.youtube.com/watch?v=1FfB7cLkUyQ) is very well structured and edited.
+  The mechanical, hardware and software design is an adapted version of [isaac879](https://github.com/isaac879/Pan-Tilt-Mount)'s project. Isaac is credited with the complete ideation and design of the slider, a project well-suited for amateur engineers such as Christopher and myself. Christopher is credited with documenting key aspects of the design (sections 2, 3 and 4 of the table of contents), modifying it and adding the zoom and focus functionalites. 
+  
 ## License
 [Project license](LICENSE).
