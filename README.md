@@ -30,7 +30,7 @@
 5. Operate in Arduino IDE using [these commands](FlashStorage_PanTiltMount/5-Axis_Position_Control_Commands.pdf) in the serial monitor
 
 ## Credits
-  The mechanical, hardware and software design is an adapted version of [isaac879](https://github.com/isaac879/Pan-Tilt-Mount)'s project. Isaac is credited with the complete ideation and design of the slider, a project well-suited for amateur engineers such as Christopher and myself. Christopher is credited with documenting key aspects of the design (sections 2, 3 and 4 of the table of contents), modifying it and adding the zoom and focus functionalites. 
+  The mechanical, hardware and software design is an adapted version of [isaac879](https://github.com/isaac879)'s [project](https://github.com/isaac879/Pan-Tilt-Mount). [Isaac879](https://github.com/isaac879) is credited with the complete ideation and design of the slider, a project well-suited for amateur engineers such as [Macartney-Christopher](https://github.com/Macartney-Christopher) and myself. [Macartney-Christopher](https://github.com/Macartney-Christopher) is credited with documenting key aspects of the design (sections 2, 3 and 4 of the table of contents), modifying it and adding the zoom and focus functionalites. 
   
 ## License
 [Project license](LICENSE).
