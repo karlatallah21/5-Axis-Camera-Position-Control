@@ -13,7 +13,8 @@
 ### 5. [Adjustments](Adjustments.md)
 ### 6. [Comments](Comments.md)
 
-## Setup (Gaming Controller)
+## Setup 
+### Using Gaming Controller
 1. Plug the power cable to an outlet
 2. Plug the Xbox controller and the USB cable to your computer
 3. Download the repository and extract the folder [Tasmanian_Launch](Tasmanian_Launch).
@@ -21,7 +22,7 @@
 5. Double-click on [Tasmanian_Launch.bat](Tasmanian_Launch/Tasmanian_Launch.bat)
 6. Enjoy!
 
-#### Setup (Arduino Serial Monitor)
+### Using Arduino Serial Monitor
 1. Compile the Arduino code [here](FlashStorage_PanTiltMount/FlashStorage_PanTiltMount.ino) 
 3. Ensure all cables are connected
 4. Compile and execute
