@@ -2,6 +2,7 @@
   The "Tasmanian Devil" is a 5-axis camera position control system to get all the video shots you could dream of. The system was designed by [isaac879](https://github.com/isaac879) and adjusted by [Macartney-Christopher](https://github.com/Macartney-Christopher) to add focus and zoom control functions (dynamic lighting control). Using Isaac's design and Christopher's adjustments, the system was tested extensively by myself and several changes were made to improve its functionality and reliability.
   
   Original Design: https://github.com/isaac879/Pan-Tilt-Mount 
+  
   Dynamic Lighting Adjustments: https://github.com/Macartney-Christopher/5-Axis-Camera-Position-Control (https://www.youtube.com/watch?v=kPsWlgf-iiQ)
  
 
