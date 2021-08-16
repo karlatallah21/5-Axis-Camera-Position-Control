@@ -36,3 +36,18 @@ digitalWrite(motorOffPin, HIGH);
 
 #### Units
 One important thing to note while working on the project is the use of different units throughout the code. Some functions, such as setTargetPositions, have to be passed values in degrees or millimetres, while other fields, such as the target_position array, contain values in steps, the language which the motors understand.
+
+## Arduino
+
+### Power Supply
+The board that is used in this project, the Arduino Nano 33 IoT, runs at 3.3V and should never be supplied with more than that value, so as not to fry the board or short the circuit. Sensors and motors should not exceed the 3.3V limit. Note that some instructions and remarks on using the board can be found [here](https://www.arduino.cc/en/Guide/NANO33IoT#please-read).
+
+### Connections
+After continuous use of the slider, some connections may become undone causing the slider to stop working or even short the circuit. Always check connections before working on the slider. Changes that can be implemented are discussed later on.
+
+## Stepper Motors
+
+### Microstepping
+
+#### What Mode To Choose?
+Assuming step speed is constant for all step modes, which is the case in the Nima 17 stepper motors, full stepping is faster since there are less steps to execute for the same distance/ degrees, as compared to any other microstepping mode. However, loud noise from the motors is unavoidable with full step mode. For example, choosing 16th step mode would decrease the sound by making movements smoother (more steps), but effectively much slower. The choice of microstepping mode depends on every specific shot, and an easy fix for loud noises would just be to edit them out. 
