@@ -8,7 +8,7 @@ The number of positions in a sequence of movements was adjusted by changing the 
 ### Homing
 
 #### Offset
-The homing function was previously inconsistent due to the hall effect sensor going off a few degrees before being centered on the magnet, on the pan and tilt axes. This was solved by introducing an offset variable which would correct the insufficient homing. By trial and error, the offset was found to be around 10 degrees, so this was accounted for in the code after perfoming homing, as shown below.
+The homing function was previously inconsistent due to the hall effect sensor going off a few degrees before being centered on the magnet, on the pan and tilt axes, since their sensors' magnets should be diametric instead of being axial. This was solved by introducing an offset variable which would correct the insufficient homing. By trial and error, the offset was found to be around 10 degrees, so this was accounted for in the code after perfoming homing, as shown below.
 ```c++
 float hall_pan_offset_degrees = -10; 
 float hall_tilt_offset_degrees = -10;
@@ -77,3 +77,10 @@ When connecting the board to my laptop, power surges would sometimes occur due t
 ### Connections
 Due to overusing the slider and over-rotating the axes, especially the pan axis where all the circuitry and connections are found, some connections may become undone, causing the circuit to short or the board to stop responding. Adjustments to tackle that were to solder some loose wires onto their pins or use crimps/ female headers to secure the connections in place (pinout files are available for the project). Periodically, I would check all connections on the circuit and replace the USB cable to prevent sudden damage of circuitry and wiring. Another fix would be to prevent the slider from excess movement, limiting range of motion to prevent wire twisting and loosening. This would be implemented by placing a small trigger on the desired position, overriding the code and stopping the specific motor from turning. This would also be useful in tracking the slider's location on that specific axis, by knowing that the end of the range of motion has been reached at a previously determined position. Better packaging would also be a viable solution, while screwing the board on the pan axis base made the problem worse.
 
+### Motor Jams
+Motor jams would occur frequently while testing and refining the slider. This is an easy fix and was almost every time caused by wiring being stuck under the pan axis base and the slider axis rails. I frequently went over those connections to fix loose or stuck ones. Again, better packaging and placement of the board is the solution. 
+
+### Tilt Axis Collisions
+If the board is not tightly secured to the bottom of the pan axis base, the tilt axis would collide with all the circuitry during its movement. The solution I implemented here was to go over the CAD files for the tilt axis side supports (arms that connect the pan axis mount to the tilt axis mount) and extend them by 50cm to provide a safe cleareance between the tilt axis and the board. 
+
+<img width="365" alt="extended" src="https://user-images.githubusercontent.com/72527951/129777372-48c5b9c0-b632-46eb-896f-1732e6583d1e.png">
