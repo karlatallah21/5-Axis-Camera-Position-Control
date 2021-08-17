@@ -87,8 +87,8 @@ If the board is not tightly secured to the bottom of the pan axis base, the tilt
 </p>
 Issues I faced with redesigning that part and the idle-side tilt support were generally due to the CAD files not being dimensioned properly, which made it a hassle to perform any slight changes. I went over the CAD files I wanted to redesign and defined most of the dimensions found, as a more robust way of fixing broken part designs.
 Some tips to keep in mind for future design:
-* Always make sure parts and features you are designing are fully defined before moving on to others, this makes future changes easy to apply
-* Direct editing could be useful to edit some parts which would otherwise take a long time, since most of the provided CAD files are highly undefined
-* When importing STL files into SolidWorks, apply import diagnostics on the parts to recognize and ultimately be able to edit all features without any restrictions
+- Always make sure parts and features you are designing are fully defined before moving on to others, this makes future changes easy to apply
+- Direct editing could be useful to edit some parts which would otherwise take a long time, since most of the provided CAD files are highly undefined
+- When importing STL files into SolidWorks, apply import diagnostics on the parts to recognize and ultimately be able to edit all features without any restrictions
 
 After redesigning the mounts, I 3D printed them using a PLA printer and faced many obstacles throughout the process which will be discussed in the 3D Printing section.
