@@ -72,7 +72,7 @@ The only obstacle with this is that the slider would have to be set at a predete
 ## Controls
 
 ### Speed
-Speed was the primary limiting factor in the project, so my focus was mainly on that. Changing the microstepping mode enabled higher speeds to be achieved. Caution should be exercised while testing the motor's max speed to avoid frying it. 
+Speed was the primary limiting factor in the project, so my focus was mainly on that. Changing the microstepping mode enabled higher speeds to be achieved. Caution should be exercised while testing the motor's max speed to avoid frying it. Through trial and error, the max speed was found to be
 
 ## Circuitry
 
