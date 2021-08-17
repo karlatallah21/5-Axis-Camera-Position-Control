@@ -41,7 +41,7 @@ if(homing_mode == 1 || homing_mode == 3){
     multi_stepper.runSpeedToPosition();
     stepper_slider.setCurrentPosition(0); 
   } 
-  setTargetPositions(panStepsToDegrees(target_position[0]), tiltStepsToDegrees(target_position[1]), 0,0,0); //input is in deg/mm, converts into steps and sets target positions
+  setTargetPositions(panStepsToDegrees(target_position[0]), tiltStepsToDegrees(target_position[1]), 0,0,0);
   sliderHomeFlag = true;
 }
 ```
