@@ -83,4 +83,4 @@ Motor jams would occur frequently while testing and refining the slider. This is
 ### Tilt Axis Collisions
 If the board is not tightly secured to the bottom of the pan axis base, the tilt axis would collide with all the circuitry during its movement. The solution I implemented here was to go over the CAD files for the tilt axis side supports (arms that connect the pan axis mount to the tilt axis mount) and extend them by 50cm to provide a safe cleareance between the tilt axis and the board. 
 
-<img width="365" alt="extended" src="https://user-images.githubusercontent.com/72527951/129777372-48c5b9c0-b632-46eb-896f-1732e6583d1e.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="365" alt="extended" src="https://user-images.githubusercontent.com/72527951/129777372-48c5b9c0-b632-46eb-896f-1732e6583d1e.png">
