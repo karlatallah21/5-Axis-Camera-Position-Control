@@ -72,7 +72,7 @@ The only obstacle with this is that the slider would have to be set at a predete
 ## Circuitry
 
 ### Power Surges
-When connecting the board to my laptop, power surges would sometimes occur due to the board being supplied with more than its rating (5V vs 3.3V). Adjustments were made by reinstalling the board's drivers, the slider worked perfectly fine after that. 
+When connecting the board to my laptop, power surges would sometimes occur due to the board being supplied with more than its rating (5V vs 3.3V). Adjustments were made by reinstalling the drivers, the slider worked perfectly fine after that. 
 
 ### Connections
 Due to overusing the slider and over-rotating the axes, especially the pan axis where all the circuitry and connections are found, some connections may become undone, causing the circuit to short or the board to stop responding. Adjustments to tackle that were to solder some loose wires onto their pins or use crimps/ female headers to secure the connections in place (pinout files are available for the project). Periodically, I would check all connections on the circuit and replace the USB cable to prevent sudden damage of circuitry and wiring. Another fix would be to prevent the slider from excess movement, limiting range of motion to prevent wire twisting and loosening. This would be implemented by placing a small trigger on the desired position, overriding the code and stopping the specific motor from turning. This would also be useful in tracking the slider's location on that specific axis, by knowing that the end of the range of motion has been reached at a previously determined position. Better packaging would also be a viable solution, while screwing the board on the pan axis base made the problem worse.
@@ -92,4 +92,14 @@ Some tips to keep in mind for future design:
 - Direct editing could be useful to edit some parts which would otherwise take a long time, since most of the provided CAD files are highly undefined
 - When importing STL files into SolidWorks, apply import diagnostics on the parts to recognize and ultimately be able to edit all features without any restrictions
 
-After redesigning the mounts, I 3D printed them using a PLA printer and faced many obstacles throughout the process which will be discussed in the 3D Printing section.
+After redesigning the mounts, I 3D printed them using a PLA printer and faced many obstacles throughout the process which will be discussed later in the 3D Printing section.
+
+## 3D Printing
+
+After many unsuccessful prints, I started to notice common problems occuring which I will detail along with their solutions.
+
+### Stringing and Retraction
+Especially with PLA FDM printers, stringing is common and reduces print quality. Thin strings can be observed in features like holes and can be solved by enabling retraction or increasing retraction distance if it is already enabled in the slicer software. This makes the nozzle pull back a bit to prevent any material from dripping and thus reduces stringing. Other fixes I tried were to increase retraction speed and reduce nozzle temperature to prevent oozing of material. Reducing nozzle temperature is done in small increments in order to ensure that the material can still melt properly during extrusion. A good online test I used to figure out the optimal printer settings can be found [here](https://teachingtechyt.github.io/calibration.html#retraction). Parameters on the website are easily adjustable to figure out the best printer configuration. I set my retraction speed at 40 mm/s and the temperature at 225 degrees, but these differ depending on the printer being used. The full configuration file for the printer I used is attached in the repository.
+
+### Distorted Prints
+Randomly distorted prints may be due to many reasons. One fix I found was efficient regardless of the problem is to reduce print speed. Reducing print speed makes prints more accurate, I set mine at around 90 mm/s. Printing a [benchy](https://www.thingiverse.com/thing:763622) is very useful in figuring out the optimal print parameters since printing one tests a variety of possible print problems. Many of my prints failed since they did not stick properly to the bed during the start. Staying near and observing the print as it's happening is vital, until the first layer is done, to stop it immediately in case it fails. This is because most problems surface while printing the first layer, and stopping the print in case it fails prevents any nozzle malfunction that might happen if it contnues running. Cleaning the bed and the nozzle is also very important in ensuring high quality prints. Another fix I used to ensure that the prints stick is to dampen a glue stick and apply a bit on the bed. 
