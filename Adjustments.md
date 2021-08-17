@@ -69,6 +69,11 @@ if(homing_mode == 2 || homing_mode == 3) {
 ```
 The only obstacle with this is that the slider would have to be set at a predetermined position for the user to know where the origin is on each axis, as there is no set/ constant origin, which was perviously the case with the hall effect sensor. In other words, you would have to manually place the slider on the edge of the rail as a default homing position for that specific axis, when the system is not connected to power. It was not necessary to adjust the pan and tilt axes homing since their respective hall effect sensors were working fine after debugging, but I changed those functions to preserve consistency among all 3 axes.
 
+## Controls
+
+### Speed
+Speed was the primary limiting factor in the project, so my focus was mainly on that. Changing the microstepping mode enabled higher speeds to be achieved. Caution should be exercised while testing the motor's max speed to avoid frying it. 
+
 ## Circuitry
 
 ### Power Surges
@@ -103,3 +108,5 @@ Especially with PLA FDM printers, stringing is common and reduces print quality.
 
 ### Distorted Prints
 Randomly distorted prints may be due to many reasons. One fix I found was efficient regardless of the problem is to reduce print speed. Reducing print speed makes prints more accurate, I set mine at around 90 mm/s. Printing a [benchy](https://www.thingiverse.com/thing:763622) is very useful in figuring out the optimal print parameters since printing one tests a variety of possible print problems. Many of my prints failed since they did not stick properly to the bed during the start. Staying near and observing the print as it's happening is vital, until the first layer is done, to stop it immediately in case it fails. This is because most problems surface while printing the first layer, and stopping the print in case it fails prevents any nozzle malfunction that might happen if it contnues running. Cleaning the bed and the nozzle is also very important in ensuring high quality prints. Another fix I used to ensure that the prints stick is to dampen a glue stick and apply a bit on the bed. 
+
+### Slicer Software
