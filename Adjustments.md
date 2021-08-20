@@ -72,12 +72,15 @@ The only obstacle with this is that the slider would have to be set at a predete
 ## Controls
 
 ### Speed
-Speed was the primary limiting factor in the project, so my focus was mainly on that. Changing the microstepping mode enabled higher speeds to be achieved. Caution should be exercised while testing the motor's max speed to avoid frying it. Through trial and error, the max speed was found to be
+Speed was the primary limiting factor in the project, so my focus was mainly on that. Changing the microstepping mode enabled higher speeds to be achieved. Caution should be exercised while testing the motor's max speed to avoid frying it. Through trial and error, the max speed was found to be 
 
 ## Circuitry
 
 ### Power Surges
 When connecting the board to my laptop, power surges would sometimes occur due to the board being supplied with more than its rating (5V vs 3.3V). Adjustments were made by reinstalling the drivers, the slider worked perfectly fine after that. 
+
+### Serial Communication 
+
 
 ### Connections
 Due to overusing the slider and over-rotating the axes, especially the pan axis where all the circuitry and connections are found, some connections may become undone, causing the circuit to short or the board to stop responding. Adjustments to tackle that were to solder some loose wires onto their pins or use crimps/ female headers to secure the connections in place (pinout files are available for the project). Periodically, I would check all connections on the circuit and replace the USB cable to prevent sudden damage of circuitry and wiring. Another fix would be to prevent the slider from excess movement, limiting range of motion to prevent wire twisting and loosening. This would be implemented by placing a small trigger on the desired position, overriding the code and stopping the specific motor from turning. This would also be useful in tracking the slider's location on that specific axis, by knowing that the end of the range of motion has been reached at a previously determined position. Better packaging would also be a viable solution, while screwing the board on the pan axis base made the problem worse.
