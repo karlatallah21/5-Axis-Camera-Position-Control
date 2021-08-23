@@ -12,7 +12,6 @@
 ### 3. [Hardware Design](Hardware.md)
 ### 4. [Software Design](Software.md)
 ### 5. [Adjustments](Adjustments.md)
-### 6. [Comments](Comments.md)
 
 ## Setup 
 ### Using Gaming Controller
